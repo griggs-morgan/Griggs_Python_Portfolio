@@ -2486,3 +2486,37 @@ CTGGAGATGGAGGAGGGCGACACCATCGAGGTTTACCAGCAGCAGACTGGTGGCGCTCCATAA
 
 
 ## Translating RNA Into Protein 
+
+```python
+# Prompt the user to enter the RNA file name
+
+input_file_name = input("Enter the name of the RNA file:")
+```
+
+    Enter the name of the RNA file: rna_sequence.txt
+
+
+
+```python
+# open the input RNA file and read the RNA sequence 
+
+with open(input_file_name, "r") as input_file:
+    rna_sequence = input_file.read().strip()
+```
+
+
+```python
+# define the codon table
+
+codon_table = {
+    "UUU": "F", "UUC": "F", "UUA": "L", "UUG": "L",
+    "CUU": "L", "CUC": "L", "CUA": "L", "CUG": "L",
+    "AUU": "I", "AUC": "I", "AUA": "I", "AUG": "M"
+}
+```
+
+
+```python
+
+```
+
